@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MarkDown </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MarkDown Converter</h1>
+  <div class = 'container'>
+    <form id='converterForm'>
+      <div class="form-group">
+        <label for="comment">Markdown:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <button class="btn btn-primary pull-right add ">Convert</button>
+    </form>
+    <br>
+    <div class="row">
+      <div id='display'></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="http://momentjs.com/downloads/moment.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/3.10.1/lodash.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

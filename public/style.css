@@ -1,0 +1,22 @@
+body{
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	font-family: Arial;
+}
+
+.add{
+	background-color: black;
+	border: 5px solid white;
+	color: white;
+}
+
+#comment, #display{
+	border: 5px solid white;
+}
+
+#display{
+	width:1000px;
+	height:300px;
+	margin-left: 12px;
+}
