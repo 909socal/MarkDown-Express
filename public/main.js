@@ -4,7 +4,7 @@ $(document).ready(init);
 
 
 function init() {
-  $('.add').on('click', myMark);
+  $('#comment').on('keyup', myMark);
 }
 
 function myMark(event) {
@@ -14,7 +14,8 @@ var markMe = $('#comment').val();
   $.post('/markdown', {markBody: markMe})
   .success(function(data) {
     
-    $('#display').append($.parseHTML(data));
+    $('#display').empty().append($.parseHTML(data));
+
   })
   .fail(function(err) {
     alert('Something went wrong!!');

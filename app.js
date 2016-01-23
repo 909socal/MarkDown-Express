@@ -20,12 +20,14 @@ app.get('/', function(req, res) {
 });
 
 
-app.post('/markdown', function(req, res) {
-  var markBody = req.body.markBody;
+app.use('/markdown', require('./router/routers.js'))
 
-  var markText = marked(markBody);
-  res.send(markText);
-});
+// app.post('/markdown', function(req, res) {
+//   var markBody = req.body.markBody;
+
+//   var markText = marked(markBody);
+//   res.send(markText);
+// });
 
 app.listen(PORT, function() {
   console.log('Express server listening on port', PORT)
